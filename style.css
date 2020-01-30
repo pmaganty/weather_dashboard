@@ -1,0 +1,89 @@
+/*********************************************************************************************************/
+/*                                      AUTHOR: Pranitha Maganty                                         */
+/*                                          TITLE: style.css                                             */
+/*                                    PROJECT: Weather Dashboard                                         */
+/*********************************************************************************************************/
+body{
+    background: rgb(243, 240, 240);
+}
+
+#header {
+    color: white;
+    background: rgb(51, 49, 49);
+    text-align: center;
+    padding: 10px;
+}
+
+.forecast_block {
+    background-color: rgb(24, 119, 228);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.forecast_date {
+    font-weight: bold;
+}
+
+.forecast_text {
+    font-size: 14px;
+}
+
+.city_button {
+    background: rgb(253, 252, 252);
+	color: inherit;
+	border: none;
+	cursor: pointer;
+    border-top: rgb(199, 193, 193) solid 1px;
+    width: 100%;
+    padding: 5px;
+}
+
+table {
+    border-bottom: rgb(199, 193, 193) solid 1px;
+    border-left: rgb(199, 193, 193) solid 1px;
+    border-right: rgb(199, 193, 193) solid 1px;
+    margin-top: 30px;
+    width: 100%;
+    display: table;
+}
+
+.each_city {
+    margin: 8px;
+}
+
+#basic_info {
+    border: rgb(199, 193, 193) solid 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#five_day {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#stats {
+    padding-top: 10px;
+}
+
+#city_name {
+    padding-left: 20px;
+}
+
+#current_icon {
+    padding-bottom: 0px;
+}
+
+.lowUVI {
+    background: green;
+}
+
+.modUVI {
+    background: orange;
+}
+
+.highUVI {
+    background: red;
+}

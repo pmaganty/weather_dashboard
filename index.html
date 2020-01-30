@@ -1,0 +1,103 @@
+<!--****************************************************************************************************-->
+<!--                                      AUTHOR: Pranitha Maganty                                      -->
+<!--                                          TITLE: index.html                                         -->
+<!--                                    PROJECT: Weather Dashboard                                      -->
+<!--****************************************************************************************************-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <!--injecting bootstrap css-->
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+
+    <!--linking in own developed style-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div id="header" class="col-sm-12 col-md-12 col-lg-12">
+                <h1>Weather Dashboard</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <h4>Search for a City</h4>
+                <input id="search_val" type="text">
+                <input id="search_btn" type=submit value="submit">
+                <div id="city_list">
+                    <table id="table"> 
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-9 col-lg-9">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div id="basic_info">
+                            <div id="city_name" class="row">
+                                <h3 id=city_name_date></h3>
+                                <img id="current_icon">
+                            </div>
+                            <div id="stats">
+                                <p id="temp"></p>
+                                <p id="humidity"></p>
+                                <p id="wind_speed"></p>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <p id="uv"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="five_day" class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div id="forecast">
+                            <h4>5-day Forecast</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-2 col-lg-2">
+                                <div id="day1" class="forecast_block"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-2 col-lg-2">
+                                <div id="day2" class="forecast_block"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-2 col-lg-2">
+                                <div id="day3" class="forecast_block"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-2 col-lg-2">
+                                <div id="day4" class="forecast_block"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-2 col-lg-2">
+                                <div id="day5" class="forecast_block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--linking in jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!--linking in moment.js for date/time info-->
+    <script src="./moment.js"></script>
+
+    <!--linking in own javascript-->
+    <script src="./script.js"></script>
+  </body>
+</html>
