@@ -4,7 +4,7 @@
 /*                                    PROJECT: Weather Dashboard                                         */
 /*********************************************************************************************************/
 body{
-    background: rgb(243, 240, 240);
+    background: rgb(250, 249, 249);
 }
 
 #header {
@@ -86,4 +86,8 @@ table {
 
 .highUVI {
     background: red;
+}
+
+#search_section {
+    background: rgb(241, 238, 238);
 }

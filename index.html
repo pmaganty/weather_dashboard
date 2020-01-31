@@ -25,13 +25,16 @@
 
   <body>
     <div class="container-fluid">
+        <!--HEADER section-->
         <div class="row justify-content-center">
             <div id="header" class="col-sm-12 col-md-12 col-lg-12">
                 <h1>Weather Dashboard</h1>
             </div>
         </div>
+        
         <div class="row">
-            <div class="col-sm-12 col-md-3 col-lg-3">
+            <!--search bar and list of cities that have been searched for-->
+            <div id="search_section" class="col-sm-12 col-md-3 col-lg-3">
                 <h4>Search for a City</h4>
                 <input id="search_val" type="text">
                 <input id="search_btn" type=submit value="submit">
@@ -42,7 +45,9 @@
                     </table>
                 </div>
             </div>
+
             <div class="col-sm-12 col-md-9 col-lg-9">
+                <!--basic info section with current weather-->
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <div id="basic_info">
@@ -63,6 +68,7 @@
                         </div>
                     </div>
                 </div>
+                <!--five day future weather forecast info-->
                 <div id="five_day" class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <div id="forecast">
