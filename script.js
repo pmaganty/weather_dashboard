@@ -64,10 +64,16 @@ function appendCity (currentStorage) {
 function checkUVI (uvi) {
     if (uvi <= 2) {
         $("#uv").addClass("lowUVI");
+        $("#uv").removeClass("modUVI");
+        $("#uv").removeClass("highUVI");
     } else if (uvi > 2 && uvi < 7) {
         $("#uv").addClass("modUVI");
+        $("#uv").removeClass("lowUVI");
+        $("#uv").removeClass("highUVI");
     } else if (uvi >= 7) {
         $("#uv").addClass("highUVI");
+        $("#uv").removeClass("modUVI");
+        $("#uv").removeClass("lowUVI");
     }
 }
 
