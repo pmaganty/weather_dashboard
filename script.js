@@ -12,7 +12,9 @@
 
 /******************************START: VARIABLE DEFINITIONS AND INTITIALIZATIONS***************************/
 var cities = [];
-localStorage.setItem("cities", JSON.stringify(cities));
+if (typeof window !== 'undefined') {
+    localStorage.setItem("cities", JSON.stringify(cities));
+}
 /*******************************END: VARIABLE DEFINITIONS AND INTITIALIZATIONS****************************/
 
 //
